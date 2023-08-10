@@ -1,0 +1,104 @@
+.mediaPlayer {
+    display: flex;
+    height: 72px;
+    margin: 0px 8px 8px 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mediaConsole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    gap: 10px;
+}
+
+.mediaButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.mediaButton:hover {
+    cursor: pointer;
+}
+
+.mediaPlayPause:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.mediaPlayPause:focus {
+    width: 10px;
+    height: 10px;
+}
+
+.enabledButton {
+    filter: brightness(0) invert(1);
+}
+
+.disabledButton {
+    filter: brightness(0) invert(0.5);
+}
+
+.whiteImage {
+    filter: brightness(0) invert(1);
+}
+
+.mediaScrubber {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mediaTime {
+    font-size: 10px
+}
+
+.scrubber {
+    background-color: #4d4d4d;
+    height: 5px;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.scrubber:hover {
+    .scrubberTimeline {
+        background-color: #1db954;
+    }
+
+    .scrubberTimelineSlider {
+        visibility: visible;
+    }
+}
+
+.scrubberTimeline {
+    position: relative;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.scrubberTimelineSlider {
+    visibility: hidden;
+    background-color: white;
+    float: right;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translate(0, -50%);
+}
+
+.scrubberTimelineSlider:hover {
+    cursor: pointer;
+}
